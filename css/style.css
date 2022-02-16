@@ -2,6 +2,8 @@ body{
     width: 96%;
     max-width: 1020px;
     margin: 0 auto;
+    color: #363636;
+    font-size: 20px;
 }
 
 /* Header Area Style Start Here  */
@@ -15,7 +17,6 @@ body{
 .header_area h1{
     text-align: center;
     font-size: 48px;
-    color: #363636;
 }
 .header_area img{
     display: flex;
@@ -25,4 +26,44 @@ body{
 }
 
 /* Main Area  Style Strat Area  */
+
+.main_section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+.input_area{
+    text-align: center;
+}
+h4, h3{
+    margin: 15px;
+}
+.input_area input{
+    margin-bottom: 15px;
+    height: 30px;
+    border: none;
+    background-color: #dadada;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+    color: #363636;
+}
+.input_area button{
+    border: none;
+    outline: none;
+    background-color: #ff7f11;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+}
+.saving{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+.saving input{
+    width: 100px;
+    height: 40px;
+}
 

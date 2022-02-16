@@ -28,22 +28,22 @@
     <div class="input_area">
         <div class="income_area">
             <h4>Income</h4>
-            <label >Income: </label>
+            <label >Income:</label>
             <input type="text" id="income_input">
         </div>
         <div class="expense_area">
             <h4>Expenses</h4>
             <div class="food_area">
-                <label>Food: </label>
-                <input type="text" id="food_input">
+                <label>Food:</label>
+                <input  class="total_cost" type="text" id="food_input">
             </div>
             <div class="rent_area">
-                <label>Rent: </label>
-                <input type="text" id="rent_input">
+                <label>Rent:</label>
+                <input class="total_cost" type="text" id="rent_input">
             </div>
             <div class="cloths_area">
                 <label>Cloths:</label>
-                <input type="text" id="cloths_input">
+                <input  class="total_cost"type="text" id="cloths_input">
             </div>
             <div class="btn_area">
                 <button type="submit" id="calculate_btn" >Calculate</button>
@@ -58,13 +58,13 @@
         <div class="saving">
             <div class="savings_area">
                 <label>Save: </label>
-                <input type="text"> 
+                <input type="text" id="savings_input"> 
             </div>
             <div>
                <span>%</span> 
             </div>
             <div>
-                <button type="submit">Save</button>
+                <button type="submit" id="savings_calculate">Save</button>
             </div>
         </div>
         <div class="saving_total">
@@ -73,6 +73,12 @@
         </div>
     </div>
 </section>
+
+<section class="error_msg">
+    <p id="warning_msg">Please Provide Positive Value</p>
+</section>
+
+
 </main>
  
     <script src="js/script.js"></script>

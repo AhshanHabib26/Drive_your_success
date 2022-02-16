@@ -67,3 +67,21 @@ h4, h3{
     height: 40px;
 }
 
+/* Erro Massage Style Start Here */
+.error_msg{
+   position: absolute;
+   content: "";
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+#warning_msg{
+    background-color: #fc3d03;
+    width: 50vh;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 10px;
+    display: none;
+}

@@ -38,6 +38,14 @@ body{
 h4, h3{
     margin: 15px;
 }
+.img_area img{
+width: 100%;
+max-width: 90%;
+height: auto;
+border: 1px solid #ddd; 
+border-radius: 4px;  
+padding: 5px;
+}
 .input_area input{
     margin-bottom: 15px;
     height: 30px;
@@ -94,4 +102,15 @@ h4, h3{
 }
 
 
+
+/* Responsive Area Start Here  */
+
+@media only screen and (max-width: 920px) {
+    .main_section{ grid-template-columns: repeat(1, 1fr); text-align: center;}
+    .saving{ justify-content: space-evenly;}
+  }
+@media only screen and (max-width: 725px){
+    .main_section{ grid-template-columns: repeat(1, 1fr); text-align: center;}
+    .header_area img{ display: none;}
+}
 

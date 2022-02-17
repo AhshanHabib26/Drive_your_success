@@ -18,9 +18,7 @@
     <!-- Main Area Start Here  -->
 
 <main>
-
 <section class="main_section">
-
     <div class="img_area">
         <img src="images/img.png" alt="">
     </div>
@@ -29,21 +27,21 @@
         <div class="income_area">
             <h4>Income</h4>
             <label >Income:</label>
-            <input type="number" id="income_input">
+            <input type="text" id="income_input">
         </div>
         <div class="expense_area">
             <h4>Expenses</h4>
             <div class="food_area">
                 <label>Food:</label>
-                <input  class="total_cost" type="number" id="food_input">
+                <input  class="total_cost" type="text" id="food_input">
             </div>
             <div class="rent_area">
                 <label>Rent:</label>
-                <input class="total_cost" type="number" id="rent_input">
+                <input class="total_cost" type="text" id="rent_input">
             </div>
             <div class="cloths_area">
                 <label>Cloths:</label>
-                <input  class="total_cost" type="number" id="cloths_input">
+                <input  class="total_cost" type="text" id="cloths_input">
             </div>
             <div class="btn_area">
                 <button type="submit" id="calculate_btn" >Calculate</button>
@@ -58,7 +56,7 @@
         <div class="saving">
             <div class="savings_area">
                 <label>Save: </label>
-                <input type="number" id="savings_input"> 
+                <input type="text" id="savings_input"> 
             </div>
             <div>
                <span>%</span> 
@@ -74,15 +72,14 @@
     </div>
 </section>
 
+<!-- Error Massage Code Start Here  -->
+
 <section class="error_msg">
-   
    <div class="warning_style" id="warning_msg_1">
     <p>Please Provide Positive Value</p>
     <span class="btn_style" id="warning_btn_1">Ok</span>
    </div>
    
-
-
     <div class="warning_style" id="warning_msg_2">
         <h2>Warning!!!</h2>
         <p>You Have No Enough Money, Please Add Your Current Balance Money</p>
@@ -94,11 +91,7 @@
         <p>You Have No Enough Balance, Please Save Your Money!</p>
         <span class="btn_style"  id="warning_btn_3">Ok</span>
     </div>
-
-
 </section>
-
-
 </main>
  
     <script src="js/script.js"></script>

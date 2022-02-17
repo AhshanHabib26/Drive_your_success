@@ -1,3 +1,5 @@
+
+// Calculate Button OnClick Listener Start Here 
 document.getElementById('calculate_btn').addEventListener('click', function(){
     let incomeInput = document.getElementById('income_input');
     let incomeInputValue = parseFloat(incomeInput.value);
@@ -27,6 +29,7 @@ function addSubTotal(){
     return totalExpense; 
 }
 
+// Svaings Calculator Added Here 
 
 document.getElementById('savings_calculate').addEventListener('click', function(){
     let savingsInput = document.getElementById('savings_input');
@@ -45,28 +48,6 @@ document.getElementById('savings_calculate').addEventListener('click', function(
     }
 
 })
-
-
-
-function validate(){
-    let foodInput = document.getElementById('food_input').value;
-    let rentInput = document.getElementById('rent_input').value;
-    let clothsInput = document.getElementById('cloths_input').value
-
-    if( foodInput > 0 || typeof foodInput == 'string'){
-        alert('Please Provide A Number');
-        return false;
-    }
-    if( rentInput > 0 || typeof rentInput == 'string'){
-        alert('Please Provide A Number');
-        return false;
-    }
-    if( clothsInput > 0 || typeof clothsInput == 'string'){
-        alert('Please Provide A Number');
-        return false;
-    }
-    return (true)  
-}
 
 
 
